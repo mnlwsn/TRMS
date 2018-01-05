@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- JavaScript -->
+    <script src="resources/javascript/main.js"></script>
+</head>
+
+<body>
+    <div id="formView" display="none">
+        <a href="form.jsp"><button name="toForm" value="Go" onClick=transfer.forward(request,response);>Go To Form</button></a>
+
+        <form id="formBody" action="SubmitForm" method="POST">
+            <table>
+                <tr>
+                    <td>Type:</td>
+                    <td>
+                        <select id="eventType" name="type" required>
+                            <option value="certification">certification</option>
+                            <option value="certification prep">certification prep class</option>
+                            <option value="seminar">seminar</option>
+                            <option value="technical training">technical training</option>
+                            <option value="university course">university course</option>
+                            <option value="other">other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>
+                        <input type="text" name="location" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Description:</td>
+                    <td>
+                        <input type="text" name="description" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cost:</td>
+                    <td>
+                        <input type="text" name="cost" placeholder="$" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Start Date:</td>
+                    <td>
+                        <input type="text" name="startDate" placeholder="MM/DD/YY" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Start Time:</td>
+                    <td>
+                        <input type="text" name="startTime" placeholder="HH:MM am/pm" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Justification:</td>
+                    <td>
+                        <select name="justification" required>
+                            <option value="career advancement">career advancement</option>
+                            <option value="continuing education">continuing education</option>
+                            <option value="project pre-requisite">project pre-requisite</option>
+                            <option value="personal interest">personal interest</option>
+                            <option value="other">other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Grade Format:</td>
+                    <td>
+                        <select name="gradeFormat" required>
+                            <option value="percentage">percentage</option>
+                            <option value="passfail">pass/fail</option>
+                            <option value="presentation">presentation</option>
+                            <option value="other">other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Grade Cutoff:</td>
+                    <td>
+                        <input type="text" name="gradeCutOff" placeholder="minimum passing" required>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="SUBMIT" onclick()="submitForm">
+        </form>
+    </div>
+
+</body>
+
+</html>

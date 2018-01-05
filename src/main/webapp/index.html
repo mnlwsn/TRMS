@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<link rel="stylesheet"
+	href="resources/css/style.css">
+<!-- Bootstrap -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- JavaScript -->
+<script src="resources/javascript/main.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row" align="center">
+			<h1> TRMS </h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div id="dLogin" class="col-sm-4" align="right">
+				<h3>SignUp</h3>
+				<form id="fSignUp" action="Registration" method="POST">
+					<table>
+						<tr>
+							<td>First Name:</td>
+							<td><input type="text" name="fname" required></td>
+						</tr>
+						<tr>
+							<td>Last Name:</td>
+							<td><input type="text" name="lname" required></td>
+						</tr>
+						<tr>
+							<td>Username:</td>
+							<td><input type="text" name="usrnm" required></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" name="pswrd" required></td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" name="email" required></td>
+						</tr>
+						<tr>
+							<td>Phone Number:</td>
+							<td><input type="text" name="phone" required></td>
+						</tr>
+						<tr>
+							<td>Department:</td>
+							<td><input type="text" name="dept" required></td>
+						</tr>
+					</table>
+					<input type="submit" value="CREATE">
+				</form>
+				<p id="registered"></p>
+			</div>
+
+			<div id="dLogin" class="col-sm-4" align="left">
+				<h3>Login</h3>
+				<form id="Login" action="Login" method="POST">
+					<table>
+						<tr>
+							<td><input type="text" name="usrnm" required></td>
+							<td> :Username</td>
+						</tr>
+						<tr>
+							<td><input type="password" name="pswrd" required></td>
+							<td> :Password</td>
+						</tr>
+					</table>
+					<input type="submit" value="LOGIN">
+				</form>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>
